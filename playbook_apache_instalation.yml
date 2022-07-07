@@ -1,0 +1,9 @@
+---
+- name: Install Apache2 in target node with ansible
+  hosts: all
+  become: true
+  tasks:
+
+  - name: install apache2 package
+    apt:
+     name: apache2
